@@ -79,7 +79,7 @@ body {
 }
 
 .factual {
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 h1, h2, h3 {
@@ -103,7 +103,35 @@ h1, h2, h3 {
     height: 500px
 }
 
+.mandela1, .mandela2 {
+    margin-top: 3%;
+}
 
+
+.mandela1.5{
+    width: 78px;
+    height: 45px;
+}
+
+.mandela2 {
+    line-height: 2.5
+}
+
+.site-footer {
+    background: #0f1111;
+    padding: 10px 0;
+    color: #ffffff;
+
+}
+
+.site-footer a{
+    color: #ffffff;
+}
+
+.list-unstyled a {
+    display: inline;
+    
+}
 
 
 
