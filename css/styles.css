@@ -10,7 +10,7 @@ body {
 
 .jumbotron-fluid {
         margin: 0;
-        padding: 30px;
+        padding: 10px;
         background-color: #2e2787;
         color: white; 
 }
@@ -28,7 +28,7 @@ body {
     padding: 8px;
     width: 80%;
     border-radius: 7px;
-    text-align: center;
+    text-align: left;
     font-family: "playfair Display", serif
 }
 
@@ -40,9 +40,7 @@ body {
     background-color: #b2beb5;;
 }
 
-.enterbutton {
-    
-}
+
 
 .sub{
     position: absolute;
@@ -133,6 +131,25 @@ h1, h2, h3 {
     
 }
 
+table{
+    margin: 0 auto;
+}
+
+.tablehead {
+    background-color: #0f1111;
+    border-bottom: 3px solid #5637DD;
+}
+
+.tablefoot {
+    background-color: #0f1111;
+    border-top: 3px solid #5637DD;
+}
+}
+
+
+.table-heading {
+    font-style: italic;
+}
 
 
 
