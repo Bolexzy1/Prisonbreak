@@ -62,10 +62,13 @@ body {
 
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    min-height: 50px;
 }
 
 .carousel {
     border: solid #5637DD;
+    width: 100%;
 
 }
 
@@ -80,7 +83,7 @@ body {
     margin-top: 3%;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
     font-family: "meriweather", sans-serif;
 
     
@@ -119,6 +122,7 @@ h1, h2, h3 {
     background: #0f1111;
     padding: 10px 0;
     color: #ffffff;
+    
 
 }
 
@@ -152,11 +156,77 @@ table{
 }
 
 
+#myTime {
+    color: white;
+}
+
+.whoweare {
+    
+    width: 100%;
+    height: auto;;
+    margin-top: 2%;
+}
+
+.whoweare h2 {
+    color:rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.whoweare p {
+    line-height: 2;
+}
+
+.whoweare .row {
+    margin-bottom: 5%;
+}
+
+.card p{
+    font-family: "lobster";
+    font-size: 22px;
+}
+
+.executives {
+    width: 190px;
+    height: 271px;
+    border-radius: 10px;
+}
+
+.pictures h5{
+    margin-bottom: 18%;
+    font-style: italic;
+}
+
+.pictures img {
+    margin-bottom: 5%;
+}
+
+#motivateb {
+    padding: 8px;
+    width: 60%;
+    margin-left: 100px;
+    font-family:'meriweather',sans-serif;
+    font-size: 1.1em;
+    font-weight: 800;
+    background-color: #002D62;
+    color: white;
+    letter-spacing: 3px;
+    
+}
+
+.motive {
+    width: 70%;
+    height: 120px;
+    background: blue;
+    margin-bottom: 30px;
+    font-family: 'lobster', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    margin-left: 65px;
 
 
-
-
-
+}
 
 
 

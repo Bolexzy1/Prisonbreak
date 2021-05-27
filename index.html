@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css\styles.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <title>Prison Break</title>
 </head>
@@ -61,10 +61,10 @@
             
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i>Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-certificate fa-lg"></i>Services</a></li>
-                    <li class="nav-item"><a  class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>about us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-certificate fa-lg"></i>Services</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="aboutus.html"><i class="fa fa-list fa-lg"></i>about us</a></li>
                     <li class="nav-item"><a  class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
-                    <li class="nav-item"><a  class="nav-link" href="contactus.html"><i class="fa fa-heart fa-lg"></i>Testimonies</a></li>
+                    <li class="nav-item"><a  class="nav-link" href=""><i class="fa fa-heart fa-lg"></i>Testimonies</a></li>
                 </ul>
                 
             </div>
@@ -245,10 +245,16 @@
                     <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
                     <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
-                <div class="col-sm-4 text-center" >
+                <div class="col-sm-3 text-center" >
                     <a class="btn btn-link" href="tel:+13616958171"><i class="fa fa-phone fa-lg text-primary"></i> 1-361-670-5934</a><br/>
                     <a class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope fa-lg text-primary"></i>Prisonbreak@mentorship.org</a>
                 </div>
+                <div class="col-sm-1" >
+                    <div id="myTime">
+
+                    </div>
+                </div>
+            
             </div>
         </div>        
     </footer>
@@ -259,6 +265,26 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script>
+      let mytime = document.getElementById("myTime");
+      function updateTime () {
+          let currentTime = new date();
+          let hours = currentTime.getHours();
+          let minutes = currentTime.getMinutes();
+          if (minutes < 10) {
+              minutes = "0" + minutes
+          }
+          let t_str = hours + ":" + minutes +" ";
+          if(hours > 11){
+              t_str += "PM";
+          } else {
+              t_str += "AM";  
+          }
+          document.getElementById("myTime").innerHTMl = t_str;
+         
+      }
+
+      mytime.addEventListener("load", updateTime)
+    </script>
 </body>
 </html>
