@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css\styles.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <title>Prison Break</title>
+</head>
+<body>
+
+    <header class=" jumbotron-fluid " >
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-3 col-sm-3 col-md-2 align-self-center">
+                    <img src="img\logo3.jpeg"   style="border:1px solid blue" class="img-fluid" height="110" width="110"/>
+
+                </div>
+                <div class="col col-md-6">
+                    <div class="searching ">
+                        <button id="button"><i class="fa fa-search"></i></button>
+                        <input type="search" id="searchButton"  placeholder="Search PrisonBreak"  >
+                        
+                    </div> 
+                    
+                    <span></span>
+                </div>
+                <div class="col-md-3 col-xl-2 mt-4">
+                    <span  class="sub">
+                        <a role="button" id="SignupButton" >
+                            <i class="fa fa-user-plus"></i>Sign up
+                
+                        </a>
+                    </span>
+                    <span class="lb">
+                        <a role="button" id="loginButton">
+                            <i class="fa fa-sign-in"></i>Log in
+                        </a>
+                    </span>
+                    
+                </div>
+            </div>        
+        </div>
+    </header>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Login</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--End of Modal-->
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>    
+
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar"> 
+            
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-certificate fa-lg"></i>Services</a></li>
+                    <li class="nav-item active"><a  class="nav-link" href="#"><i class="fa fa-list fa-lg"></i>about us</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="contactus.html"><i class="fa fa-heart fa-lg"></i>Testimonies</a></li>
+                </ul>
+                
+            </div>
+        </div>    
+
+        
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 stepup">         
+                <video muted autoplay loop id="steps">
+                        <source src="img\steps.mp4">
+                </video>
+                <p>Every step takes you closer to your dreams</p>
+            </div>              
+            
+        </div>
+        <!--beginning of navigation tabs-->
+        <div class="row row-content">
+            <div class="col-12">
+                <h3>What we provide</h3>
+                <ul class="nav nav-tabs offer">
+                    <li class="nav-item"><a  class="nav-link active" href="#bootstrap" role="tab" data-toggle="tab">Education</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="#git" role="tab" data-toggle="tab">Counselling</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="#mongo" role="tab" data-toggle="tab">Employment Opportunities</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="#node" role="tab" data-toggle="tab">Others</a></li>
+                    
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade show active" id="bootstrap">
+                        
+                        <p class=" d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ipsam ut eius commodi architecto maxime? Minus rerum, necessitatibus voluptatibus error ratione dolor maxime quibusdam quae, deleniti enim, at culpa nobis?
+                        Qui possimus omnis assumenda ullam cumque minus aperiam odit. Voluptatum, rerum. Iste qui nesciunt necessitatibus ut facere unde, molestiae, suscipit mollitia optio eveniet quam, impedit repellat accusamus deserunt perferendis laudantium!
+                        Pariatur doloribus omnis laudantium maxime tempora quam hic deserunt necessitatibus iste. Ullam, perferendis? Cumque laborum nisi tempora delectus? Accusantium delectus tenetur sint placeat quibusdam ad suscipit vitae facilis commodi fugit.</p>
+
+                        <p>To register for our educational training programs, click <a href="index.html">here</a></p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="git">
+                        
+                        <p class= "d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas alias dolores repellendus minima quisquam eaque eius ipsam animi neque soluta nostrum aperiam sunt excepturi ea earum, obcaecati architecto suscipit fugit.
+                        Corporis facere aliquam aspernatur, necessitatibus sit tenetur. Perspiciatis vero magni maiores, quidem nam quibusdam hic molestiae, voluptate quia ducimus unde maxime est rerum minus nobis minima soluta consectetur. Blanditiis, obcaecati?
+                        Quia voluptas corrupti mollitia veniam ea sapiente? Inventore aperiam expedita maxime harum laborum ex id dolore vitae consequatur enim voluptatum voluptatem eligendi molestias dolores quibusdam, dicta repellendus aspernatur minus laudantium!
+                        Obcaecati maiores, esse odio aut dignissimos nobis nemo similique a, inventore laudantium quis consectetur quas incidunt harum. Nemo explicabo similique ad, exercitationem odit, voluptates quidem, fugiat rem recusandae nesciunt iste.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="mongo">
+                        
+                        <p class=" d-sm-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium fugiat possimus tempore. Quos rem magnam cum esse modi sed corrupti sequi ipsam, excepturi omnis inventore delectus corporis beatae? Quas, maxime.
+                        Rem id repellat fugiat iure aspernatur necessitatibus corporis molestiae saepe cumque itaque debitis quod fugit voluptatum veniam quis, asperiores voluptatibus veritatis mollitia voluptates impedit magnam labore. Fugit sit nostrum accusantium!
+                        Molestiae minima quia eaque ipsam velit. Deserunt voluptatem dolore rerum soluta. Quas aperiam ratione provident perferendis. Architecto neque exercitationem eius alias cum modi, quo dolor provident commodi fugit quam doloribus.</p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="node">
+                        
+                        <p class=" d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis optio numquam dolor sint aperiam, ab molestias quasi consequuntur quia qui consequatur voluptates vero sunt omnis illum! Explicabo accusantium totam ipsum!
+                        Odio vero voluptates incidunt officia? Iste distinctio voluptatibus eius quos, quis non dolore nisi deleniti asperiores ad eligendi accusamus optio sunt cum culpa. Eum mollitia non voluptatibus maiores, vitae alias?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of navigation tab-->
+    
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-4 ">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-md-inline pr-1"><a href="#">Home</a></li>
+                        <li class="d-md-inline pr-1"><a href="#">Services</a></li>
+                        <li class="d-md-inline pr-1"><a href="#">about us</a></li>
+                        <li class="d-md-inline pr-1"><a href="#">Contact</a></li>
+                        <li><a href="#">Testimonies</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-3 text-center"> 
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a class=" btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-3 text-center" >
+                    <a class="btn btn-link" href="tel:+13616958171"><i class="fa fa-phone fa-lg text-primary"></i> 1-361-670-5934</a><br/>
+                    <a class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope fa-lg text-primary"></i>Prisonbreak@mentorship.org</a>
+                </div>
+                <div class="col-sm-1" >
+                    <div id="myTime">
+
+                    </div>
+                </div>
+            
+            </div>
+        </div>        
+    </footer>
+
+
+    
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script scc="script.js"> 
+        
+    </script>
+    <script>
+        $(function(){
+            $("#loginButton").click(function(){
+                $("#loginModal").modal("show")
+            })
+        })
+    </script>
+</body>
+</html>
